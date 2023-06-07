@@ -8,12 +8,46 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        header.text = "Меню"
+        pizza1.text = "Маргарита"
+        pizza2.text = "Пепперони"
+        pizza3.text = "4 сыра"
+        pizza4.text = "Гавайская"
+        pizza5.text = "Мясная"
+        pizza6.text = "Вегетарианская"
+        pizza7.text = "Деревенская"
+        pizza8.text = "Домашняя"
+        pizza9.text = "Любимая"
+        pizza10.text = "С сюрпризом"
+        
     }
-
-
+    @IBOutlet weak var header: UILabel!
+    
+    @IBOutlet weak var pizza1: UILabel!
+    
+    @IBOutlet weak var pizza2: UILabel!
+    
+    @IBOutlet weak var pizza3: UILabel!
+    
+    @IBOutlet weak var pizza4: UILabel!
+    
+    @IBOutlet weak var pizza5: UILabel!
+    
+    @IBOutlet weak var pizza6: UILabel!
+    
+    @IBOutlet weak var pizza7: UILabel!
+    
+    @IBOutlet weak var pizza8: UILabel!
+    
+    @IBOutlet weak var pizza9: UILabel!
+    
+    @IBOutlet weak var pizza10: UILabel!
+    
 }
 
