@@ -16,13 +16,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let label = UILabel()
     
+    var tableView = UITableView()
+    
+    let identifire = "Pizza"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        createTitle()
+        createTable()
     }
+    
+    func createTitle() {
+        self.view.backgroundColor = UIColor.white
+        self.navigationItem.title = "Menu"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+    }
+    
+    func createTable() {
+        self.tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifire)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        view.addSubview(tableView)
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pizzasNames.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ident = "Pizza"
         var cell: UITableViewCell
@@ -31,5 +56,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
 }
-
-

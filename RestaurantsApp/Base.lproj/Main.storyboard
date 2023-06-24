@@ -16,34 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="WyF-i9-lB1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Uu8-DU-NRs">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Pizza" id="ocB-Pz-wUE">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ocB-Pz-wUE" id="SaY-vf-LXg">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="eQ6-Kw-E7n" id="Enk-TY-CuY"/>
-                                    <outlet property="delegate" destination="eQ6-Kw-E7n" id="IdI-JU-npb"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Hkz-TJ-jY6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Uu8-DU-NRs" firstAttribute="leading" secondItem="Hkz-TJ-jY6" secondAttribute="leading" id="413-4n-3Qm"/>
-                            <constraint firstItem="Uu8-DU-NRs" firstAttribute="trailing" secondItem="Hkz-TJ-jY6" secondAttribute="trailing" id="CFA-8l-9yb"/>
-                            <constraint firstAttribute="bottom" secondItem="Uu8-DU-NRs" secondAttribute="bottom" id="MR2-0q-wuj"/>
-                            <constraint firstItem="Uu8-DU-NRs" firstAttribute="top" secondItem="WyF-i9-lB1" secondAttribute="top" id="NkC-Dh-jj0"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="xtk-iD-NNn"/>
                 </viewController>
