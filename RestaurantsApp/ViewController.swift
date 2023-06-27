@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.dataSource = self
         
         view.addSubview(tableView)
+       
+        tableView.register(UINib(nibName: String(describing: CustomTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CustomTableViewCell.self))
         
         tableView.snp.makeConstraints {
             $0.left.right.equalToSuperview().inset(0)
@@ -51,7 +53,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifire, for:indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CustomTableViewCell.self))
+        as! CustomTableViewCell
         cell.textLabel?.text = pizzasNames[indexPath.row]
         return cell
     }

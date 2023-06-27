@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A2D927DD16E24D215F9C582 /* Pods_RestaurantsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C1CB7EA585C04BA5A1DB3 /* Pods_RestaurantsApp.framework */; };
+		A3DF6D992A48B4F7009B5C1B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DF6D972A48B4F7009B5C1B /* CustomTableViewCell.swift */; };
+		A3DF6D9A2A48B4F7009B5C1B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DF6D982A48B4F7009B5C1B /* CustomTableViewCell.xib */; };
 		B55DC1342A2C979D009EFDCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DC1332A2C979D009EFDCC /* AppDelegate.swift */; };
 		B55DC1362A2C979D009EFDCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DC1352A2C979D009EFDCC /* SceneDelegate.swift */; };
 		B55DC1382A2C979D009EFDCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DC1372A2C979D009EFDCC /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		470C1CB7EA585C04BA5A1DB3 /* Pods_RestaurantsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DF6D972A48B4F7009B5C1B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A3DF6D982A48B4F7009B5C1B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		B55DC1302A2C979D009EFDCC /* RestaurantsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55DC1332A2C979D009EFDCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B55DC1352A2C979D009EFDCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A3DF6D962A48B477009B5C1B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A3DF6D972A48B4F7009B5C1B /* CustomTableViewCell.swift */,
+				A3DF6D982A48B4F7009B5C1B /* CustomTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		B55DC1272A2C979D009EFDCC = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +91,7 @@
 				B55DC13C2A2C979E009EFDCC /* Assets.xcassets */,
 				B55DC13E2A2C979E009EFDCC /* LaunchScreen.storyboard */,
 				B55DC1412A2C979E009EFDCC /* Info.plist */,
+				A3DF6D962A48B477009B5C1B /* Cells */,
 			);
 			path = RestaurantsApp;
 			sourceTree = "<group>";
@@ -88,7 +102,6 @@
 				DC990EA5B13B4928EAE3EC2A /* Pods-RestaurantsApp.debug.xcconfig */,
 				E75B297F9E6F572F3CCC20E0 /* Pods-RestaurantsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +167,7 @@
 			files = (
 				B55DC1402A2C979E009EFDCC /* LaunchScreen.storyboard in Resources */,
 				B55DC13D2A2C979E009EFDCC /* Assets.xcassets in Resources */,
+				A3DF6D9A2A48B4F7009B5C1B /* CustomTableViewCell.xib in Resources */,
 				B55DC13B2A2C979D009EFDCC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +223,7 @@
 			files = (
 				B55DC1382A2C979D009EFDCC /* ViewController.swift in Sources */,
 				B55DC1342A2C979D009EFDCC /* AppDelegate.swift in Sources */,
+				A3DF6D992A48B4F7009B5C1B /* CustomTableViewCell.swift in Sources */,
 				B55DC1362A2C979D009EFDCC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
