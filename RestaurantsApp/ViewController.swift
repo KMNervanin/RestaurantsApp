@@ -10,7 +10,7 @@ import SnapKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
-    let pizza = [PizzaModel(name: "Маргарита", image: "1", descriptionPizza: "Сыр Моцарелла, Томатный соус"),
+    let pizzasArray = [PizzaModel(name: "Маргарита", image: "1", descriptionPizza: "Сыр Моцарелла, Томатный соус"),
                  PizzaModel(name: "Пепперони", image: "2", descriptionPizza: "Пепперони, Сыр Моцарелла, Томатный соус"),
                  PizzaModel(name: "4 сыра", image: "3", descriptionPizza: "Соус Карбонара, Сыр Чеддер (тёртый), Сыр Моцарелла, Сыр Роккфорти, Чесночный соус с сыром Пармезан"),
                  PizzaModel(name: "Гавайская", image: "4", descriptionPizza: "Ананас, Ветчина, Сыр Моцарелла, Томатный соус"),
@@ -28,7 +28,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     ]
     
     var tableView = UITableView()
-    let customImageView = UIImageView()
     let identifire = "Pizza"
     
     override func viewDidLoad() {
@@ -53,7 +52,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         view.addSubview(tableView)
        
-        tableView.register(UINib(nibName: String(describing: CustomTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CustomTableViewCell.self))
+        tableView.register(UINib(nibName: String(describing: CellForPizza.self), bundle: nil), forCellReuseIdentifier: String(describing: CellForPizza.self))
         
         tableView.snp.makeConstraints {
             $0.left.right.equalToSuperview().inset(0)
@@ -62,16 +61,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.pizza.count
+        return self.pizzasArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CustomTableViewCell.self))
-        as! CustomTableViewCell
-        let pizzaModel = pizza[indexPath.row]
-        cell.configure(for: pizzaModel)
-        cell.customImageView.image = UIImage(named:pizzaModel.image ?? "2")
-        cell.addSubview(customImageView)
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CellForPizza.self))
+        as! CellForPizza
+        let pizzaList = pizzasArray[indexPath.row]
+        cell.configure(for: pizzaList)
         return cell
     }
 }
