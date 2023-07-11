@@ -20,6 +20,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="xtk-iD-NNn"/>
+                    <connections>
+                        <segue destination="utO-62-e3d" kind="show" identifier="segueDetails" id="3mG-mI-psH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVv-jJ-xow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
