@@ -25,6 +25,22 @@
             </objects>
             <point key="canvasLocation" x="698.47328244274809" y="-1111.2676056338028"/>
         </scene>
+        <!--PizzaVC-->
+        <scene sceneID="6I0-5I-7x9">
+            <objects>
+                <viewController storyboardIdentifier="PizzaVC" id="utO-62-e3d" customClass="PizzaVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5zQ-d3-0sr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aJo-jV-Co9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FB4-63-icw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGx-y2-YRN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="-1111"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="U8Y-Se-ihO">
             <objects>
@@ -33,6 +49,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lNc-ni-Hvd">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textShadowColor" systemColor="systemFillColor"/>
                         </textAttributes>
@@ -44,7 +61,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTG-gN-0XR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228.24427480916029" y="-1111.2676056338028"/>
+            <point key="canvasLocation" x="-111" y="-1111"/>
         </scene>
     </scenes>
     <resources>
