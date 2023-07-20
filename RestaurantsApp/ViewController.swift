@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var tableView = UITableView()
     let identifire = "Pizza"
+    var pizzaVcTitleName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.view.backgroundColor = UIColor.white
         self.navigationItem.title = "Меню"
         self.navigationController?.navigationBar.isTranslucent = true
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
         
     }
     
@@ -73,7 +77,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "segueDetails", sender: nil)
+        pizzaVcTitleName = pizzasArray[indexPath.row].name
+       performSegue(withIdentifier: "segueDetails", sender: nil)
+        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PizzaVC {
+            vc.navTitle = pizzaVcTitleName
+        }
     }
 }
 
