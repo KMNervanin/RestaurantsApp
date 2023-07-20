@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A2D927DD16E24D215F9C582 /* Pods_RestaurantsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C1CB7EA585C04BA5A1DB3 /* Pods_RestaurantsApp.framework */; };
+		A33AC3BC2A69CEBA00E901A2 /* DetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33AC3BB2A69CEBA00E901A2 /* DetailsStoryboard.storyboard */; };
 		A3BEE2E12A5833BC0016A626 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BEE2E02A5833BC0016A626 /* Models.swift */; };
 		A3BEE2E72A5D5CC00016A626 /* PizzaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BEE2E62A5D5CC00016A626 /* PizzaVC.swift */; };
 		A3DF6D992A48B4F7009B5C1B /* CellForPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DF6D972A48B4F7009B5C1B /* CellForPizza.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		470C1CB7EA585C04BA5A1DB3 /* Pods_RestaurantsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33AC3BB2A69CEBA00E901A2 /* DetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryboard.storyboard; sourceTree = "<group>"; };
 		A3BEE2E02A5833BC0016A626 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A3BEE2E62A5D5CC00016A626 /* PizzaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaVC.swift; path = Cells/PizzaVC.swift; sourceTree = "<group>"; };
 		A3DF6D972A48B4F7009B5C1B /* CellForPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForPizza.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				A3BEE2E62A5D5CC00016A626 /* PizzaVC.swift */,
 				A3BEE2E02A5833BC0016A626 /* Models.swift */,
 				B55DC1392A2C979D009EFDCC /* Main.storyboard */,
+				A33AC3BB2A69CEBA00E901A2 /* DetailsStoryboard.storyboard */,
 				B55DC13C2A2C979E009EFDCC /* Assets.xcassets */,
 				B55DC13E2A2C979E009EFDCC /* LaunchScreen.storyboard */,
 				B55DC1412A2C979E009EFDCC /* Info.plist */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55DC1402A2C979E009EFDCC /* LaunchScreen.storyboard in Resources */,
+				A33AC3BC2A69CEBA00E901A2 /* DetailsStoryboard.storyboard in Resources */,
 				B55DC13D2A2C979E009EFDCC /* Assets.xcassets in Resources */,
 				A3DF6D9A2A48B4F7009B5C1B /* CellForPizza.xib in Resources */,
 				B55DC13B2A2C979D009EFDCC /* Main.storyboard in Resources */,
