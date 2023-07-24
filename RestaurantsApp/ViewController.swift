@@ -82,6 +82,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             pizzaVcTitleName = pizzasArray[indexPath.row].name
             vc.navTitle = pizzaVcTitleName
         self.navigationController?.pushViewController(vc, animated: true)
+        //проверка
     }
 }
 
