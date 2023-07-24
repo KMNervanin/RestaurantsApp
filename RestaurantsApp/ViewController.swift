@@ -77,14 +77,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        pizzaVcTitleName = pizzasArray[indexPath.row].name
-       performSegue(withIdentifier: "segueDetails", sender: nil)
-        }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? PizzaVC {
+        let storyboard = UIStoryboard(name: "DetailsStoryboard", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "details") as! PizzaVC
+            pizzaVcTitleName = pizzasArray[indexPath.row].name
             vc.navTitle = pizzaVcTitleName
-        }
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
